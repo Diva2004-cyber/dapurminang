@@ -1,0 +1,79 @@
+/* Styling untuk tombol Login di Navbar */
+.btn-login {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-login:hover {
+    background-color: #e68900;
+}
+
+/* Pastikan list menu pada navbar tampil rapi */
+.nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 8px 0;
+    min-width: 180px;
+}
+
+.dropdown-menu li {
+    padding: 5px 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 5px 15px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f8f9fa;
+    color: #d4a017;
+    text-decoration: none;
+}
+
+/* Profile icon styles */
+.dropdown-toggle .fa-user-circle {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.fa-sign-in-alt {
+    margin-right: 5px;
+}
+
+/* Profile page styles */
+.card-header.bg-primary {
+    background-color: #d4a017 !important;
+    border-color: #d4a017;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}

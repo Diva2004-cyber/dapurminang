@@ -1,0 +1,168 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #1F1F1F; /* Dark background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+.navbar-scrolled {
+    background-color: rgba(31, 31, 31, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-spacer {
+    height: 70px;
+}
+
+.navbar-brand {
+    padding: 0.5rem 0;
+}
+
+.navbar-logo {
+    height: 45px;
+    margin-right: 10px;
+}
+
+.brand-text {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 500;
+    padding: 1.2rem 1rem !important;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #FFC107 !important; /* Bootstrap warning color for gold accent */
+}
+
+/* Cart and User Icons */
+.cart-icon {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.8rem 1rem !important;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    background-color: #FFC107 !important;
+    color: #000 !important;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    background-color: #1F1F1F;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    margin-top: 0.5rem;
+}
+
+.dropdown-item {
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #FFC107;
+}
+
+.dropdown-divider {
+    border-color: rgba(255,255,255,0.1);
+}
+
+/* Mobile Menu (Offcanvas) */
+.offcanvas {
+    background-color: #1F1F1F;
+}
+
+.offcanvas-header {
+    background-color: #1F1F1F;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 1rem 1.5rem;
+}
+
+.offcanvas-title {
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-close {
+    filter: brightness(0) invert(1);
+}
+
+/* Mobile Menu Items */
+.offcanvas .nav-link {
+    color: #fff !important;
+    padding: 0.75rem 1.5rem !important;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.offcanvas .nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #FFC107 !important;
+}
+
+/* Custom Button in Navbar */
+.navbar .btn-warning {
+    background-color: #FFC107;
+    border-color: #FFC107;
+    color: #000;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+}
+
+.navbar .btn-warning:hover {
+    background-color: #ffca2c;
+    border-color: #ffca2c;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        position: relative;
+    }
+    
+    .navbar-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #FFC107;
+        transition: width 0.3s ease;
+    }
+    
+    .navbar-nav .nav-link:hover::after,
+    .navbar-nav .nav-link.active::after {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        max-width: 200px;
+    }
+    
+    .brand-text {
+        font-size: 1rem;
+    }
+    
+    .offcanvas-body .btn {
+        margin-top: 1rem;
+    }
+} 

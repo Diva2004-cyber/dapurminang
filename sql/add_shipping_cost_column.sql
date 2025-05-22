@@ -1,0 +1,1 @@
+ALTER TABLE `placed_orders` ADD COLUMN `shipping_cost` DECIMAL(10,2) NOT NULL DEFAULT 0.00 AFTER `total_amount`; 
